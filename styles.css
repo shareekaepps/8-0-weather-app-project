@@ -1,0 +1,69 @@
+/* #main{
+    display: grid;
+    
+} */
+
+#content{
+    display: grid;
+    grid-template-areas: 
+    ". header header header ."
+    ". current current previous ."
+    ". forcast forcast . .";
+    grid-gap: 5px;
+    width: 75%;
+    margin: 0 auto;
+}  
+
+
+#header{
+    display: grid;
+    text-align: center;
+    grid-area: header;
+    border: 2px solid black;
+    padding: 10px 0px 40px 0px;
+    margin: 10px;
+    background-color: cadetblue;
+}
+#error-message{
+    color: red;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+#currentLocation{
+    border: 2px solid rgb(63, 226, 218);
+    margin: 10px;
+    padding:10px;
+    grid-area: current;
+    text-align: center;
+    background-color: rgb(223, 217, 217);
+}
+#previous-searches{
+
+    margin: 10px;
+    padding: 15px;
+    grid-area: previous;
+    text-align: center;
+}
+#no-search-yet{
+    text-align: center;
+
+}
+#forecast{
+    display:grid;
+    grid-template-areas: 
+    "today tomorrow dayafter";
+    margin: 10px;
+    padding: 0px;
+    grid-area: forcast;
+    text-align: center;
+}
+#today{
+    grid-area: today;
+}
+#tomorrow{
+    grid-area: tomorrow;
+}
+#day-after{
+    grid-area: dayafter;
+} 
