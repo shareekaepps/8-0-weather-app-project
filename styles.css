@@ -3,9 +3,53 @@
     
 } */
 
+* body{
+    background-color: wheat;
+    background-image: url("assets/orange-cloud.jpeg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* body, html {
+height: 100%;
+} */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 100px;
+    z-index: 10;
+}
+
+#header-image-menu{
+    top: 10px;
+    position: relative;
+}
+
+#header-image-menu img{
+    width: 100%;
+    margin: none;
+    padding: none;
+}
+
+#image-text{
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    font-family: 'Roboto';
+    color: #000;
+    transform: translate(-30%, -30%);
+    text-align: center;
+}
+
 #content{
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     ". header header header ."
     ". current current previous ."
     ". forcast forcast . .";
@@ -14,16 +58,29 @@
     margin: 0 auto;
 }  
 
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
 
-#header{
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+#weather-header{
     display: grid;
     text-align: center;
     grid-area: header;
     border: 2px solid black;
-    padding: 10px 0px 40px 0px;
+    padding: 40px 0px 10px 0px;
     margin: 10px;
     background-color: cadetblue;
 }
+
 #error-message{
     color: red;
     font-weight: 700;
@@ -31,12 +88,12 @@
 }
 
 #currentLocation{
-    border: 2px solid rgb(63, 226, 218);
+    border: 2px solid #f5a01f;
     margin: 10px;
     padding:10px;
     grid-area: current;
     text-align: center;
-    background-color: rgb(223, 217, 217);
+    background-color: rgba(141, 200, 215, 0.365);
 }
 #previous-searches{
 
@@ -58,8 +115,13 @@
     grid-area: forcast;
     text-align: center;
 }
+#forecast.display{
+    width: 100%;
+    margin: 5px;
+    height: 100px;
+}
 #today{
-    grid-area: today;
+    grid-area: today;     
 }
 #tomorrow{
     grid-area: tomorrow;
