@@ -1,6 +1,6 @@
-/* #main{
-    display: grid;
-    
+/* * {
+    margin: 0;
+    padding: 0;
 } */
 
 * body {
@@ -19,7 +19,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    border-bottom: solid; color: rgb(63, 57, 57);
+    border-bottom: solid; color: #e29727d2; 
     justify-content: space-between;
     align-items: center;
     padding: 15px 80px;
@@ -116,10 +116,13 @@ a {
     margin: 10px;
     padding: 15px;
     grid-area: previous;
-    text-align: center;
+    text-align: center;   
 }
+
 #no-search-yet{
     text-align: center;
+    font-style: sans-serif;
+    font-weight: 400;
 
 }
 #forecast{
@@ -145,6 +148,11 @@ a {
 #day-after{
     grid-area: dayafter;
 } 
+
+#fixed-footer-image {
+    padding-left: 2%;
+    box-sizing:content-box;
+}
 .container {
     font-size: 1.0em   
 }
