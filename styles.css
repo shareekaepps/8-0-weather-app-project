@@ -4,6 +4,7 @@
 } */
 
 * body{
+    padding: 0px;
     background-color: wheat;
     background-image: url("assets/orange-cloud.jpeg");
     height: 100%;
