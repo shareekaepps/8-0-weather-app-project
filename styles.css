@@ -3,8 +3,9 @@
     
 } */
 
-* body{
+* body {
     padding: 0px;
+    margin: 0px;
     background-color: wheat;
     background-image: url("assets/orange-cloud.jpeg");
     height: 100%;
@@ -15,7 +16,6 @@
 
 header { 
     position: relative;
-    /* display: flex; */
     top: 0;
     left: 0;
     width: 100%;
@@ -41,12 +41,12 @@ a {
     text-align: left;
 }
 
-#header-image-menu{
+#header-image-menu {
     top: 10px;
     position: relative;
 }
 
-#header-image-menu img{
+#header-image-menu img {
     width: 100%;
     margin: 21px auto;
     padding: none;
@@ -79,12 +79,12 @@ a {
     color: white;
 }
 
-.centered {
+/* .centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+  } */
 
 #weather-header{
     display: grid;
